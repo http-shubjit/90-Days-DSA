@@ -9,6 +9,7 @@
 //   let ressum;
 //   let resarr = [];
 //   for (let i = 0; i < arr.length; i++) {
+// check if the sum of elemnent already present in array
 //     ressum = arr[i];
 //     if (sum === arr[i]) {
 //       resarr.push({ i: i });
