@@ -20,3 +20,42 @@
 // Input:   price[] = {90, 80, 70, 60, 50}\
 // Output:  0
 // Not possible to earn.
+
+//**Very Intersting Question,i'm pleased to do it. Lets Do it**/
+
+const prices = [10, 22, 5, 75, 65, 80];
+const len = prices.length;
+const findProfit = (arr, len) => {
+  let firstbuy,
+    firstsell = 0;
+  let secondsell = arr[len - 1],
+    secondbuy = 0;
+  if (arr[0] < arr[1]) {
+    firstbuy = arr[0];
+  } else {
+    firstbuy = 0;
+  }
+  let totalprofit = 0;
+  let i;
+  for (i = 0; i < arr.length - 1; i++) {
+    if (firstbuy < arr[i] && arr[i] > arr[i + 1]) {
+      firstsell = arr[i];
+      break;
+    }
+  }
+
+  for (let j = arr.length; j > i; j--) {
+    if (arr[j - 1] < arr[j]) {
+      secondbuy = arr[j - 1];
+    }
+  }
+  if (i == 0) {
+    totalprofit = secondsell - secondbuy;
+  } else {
+    totalprofit = firstsell - firstbuy + (secondsell - secondbuy);
+  }
+
+  return totalprofit;
+};
+
+console.log(findProfit(prices, len));
