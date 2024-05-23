@@ -1,1 +1,18 @@
-
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EquilibriumIndex",
+            "request": "launch",
+            "mainClass": "EquilibriumIndex",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "First",
+            "request": "launch",
+            "mainClass": "First",
+            "projectName": "DSA_55cb9d6"
+        }
+    ]
+}
