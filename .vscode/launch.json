@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Binarysearch",
+            "request": "launch",
+            "mainClass": "Binarysearch",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "Binary",
+            "request": "launch",
+            "mainClass": "Binary",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Main",
