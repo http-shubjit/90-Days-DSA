@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GFG",
+            "request": "launch",
+            "mainClass": "GFG",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "Binarysearch",
             "request": "launch",
             "mainClass": "Binarysearch",
