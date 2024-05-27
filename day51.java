@@ -22,7 +22,7 @@ class GFG {
             for (int j = L; j <= R; j++) {
                 sum = sum + arr[j];
             }
-            System.out.println(L + "+" + R + "=" + su
+            System.out.println(L + "+" + R + "=" + sum);
 
         }
     }
