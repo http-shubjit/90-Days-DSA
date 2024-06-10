@@ -26,7 +26,7 @@ const findMean = () => {
         if (temparr.length % 2 !== 0) 
        { 
             let item = ((temparr.length + 1) / 2) - 1
-            resarr.push(temparr[item])
+>            resarr.push(temparr[item])
         }
 
         else {
