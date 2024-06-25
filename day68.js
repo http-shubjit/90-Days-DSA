@@ -1,36 +1,19 @@
-function countValidArrays(n, k) {
-    const MOD = 10000;
-    
-    // Initialize dp array with 0s
-    let dp = Array.from({ length: k + 1 }, () => Array(n + 1).fill(0));
+// // • Unique Birthday Gift INFOSYS
+// N: Represents the maximum possible value that each element in the arrays can take. This means each element in the array will be in the range from 1 to N.
 
-    // Base case: for arrays of length 1, each number from 1 to N is a valid array
-    for (let j = 1; j <= n; j++) {
-        dp[1][j] = 1;
-    }
+// K: Represents the length of the arrays that we are interested in generating and counting. This means we are looking for arrays of length K
+const n = 3;
+const k = 2;
 
-    // Fill the dp array using the transition relation
-    for (let i = 2; i <= k; i++) {
-        for (let j = 1; j <= n; j++) {
-            // Sum over all valid previous elements
-            for (let m = 1; m <= n; m++) {
-                if (j % m === 0) {
-                    dp[i][j] = (dp[i][j] + dp[i - 1][m]) % MOD;
-                }
-            }
+const totalBirthdayGift = (n, k) => {
+    let res = [];
+    for (let i = 1; i <= n; i++){
+        for (let j = i; j <= n; j++){
+            if (j % i === 0) {
+res.push([i,j])            }
         }
     }
 
-    // Sum up all valid arrays of length k
-    let result = 0;
-    for (let j = 1; j <= n; j++) {
-        result = (result + dp[k][j]) % MOD;
-    }
-
-    return result;
+    return res;
 }
-
-// Example usage
-let n = 3;
-let k = 2;
-console.log(countValidArrays(n, k)); // Output: 5
+console.log(totalBirthdayGift(n,k))
