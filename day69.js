@@ -9,28 +9,35 @@
 // 12
 // 1
 
-const arr=[7 ,
-17 ,
-16 ,
-12 ,
-2 ,
-8 ,
-17 ,
-17  ]
-const bitwiseSubsequence = (arr) => {
-        let maxcount = 0;
-    for (let i = 0; i < arr.length; i++){
-        let count = 0;
-        for (let j = i + 1; j < arr.length; j++){
-            if (arr[i] < arr[j] && (arr[i] & arr[j]) * 2 < (arr[i] | arr[j]))
-                count ++; 
-            else
-                break;
-        }
-        if(count>maxcount) maxcount=count
-    }
-    return maxcount;
 
-    
+function lenOfLongIncSubArr(arr, n)
+{
+
+var max = 1, len = 1;
+	
+	
+	for (var i=1; i<n; i++)
+	{
+		
+		if (arr[i] > arr[i-1])
+			len++;
+		else
+		{if (max < len) 
+			{
+				max = len;
+			}	
+            len = 1;
+		} 
+	}
+	
+	
+	if (max < len)
+	{
+		max = len;
+	}
+return max;
 }
-console.log(bitwiseSubsequence(arr))
+
+var arr = [5, 15, 6, 5, 12, 1];
+var n = arr.length;
+console.log(lenOfLongIncSubArr(arr,n))
