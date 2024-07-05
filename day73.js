@@ -19,7 +19,7 @@ const arr1 = [1, 2, 3, 4,5,6]
 const arr2 = [4, 5, 6, 7]
 let arr=[]
 for (let i = 0; i < arr1.length; i++){
-    arr.push(arr[i])
+    arr.push(arr1[i])
 }
 for (let i = 0; i < arr2.length; i++){
     arr.push(arr2[i])
