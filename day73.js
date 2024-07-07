@@ -15,13 +15,29 @@
 
 
 // merge 2 array without concat
-const arr1 = [1, 2, 3, 4,5,6]
-const arr2 = [4, 5, 6, 7]
-let arr=[]
-for (let i = 0; i < arr1.length; i++){
-    arr.push(arr1[i])
+// const arr1 = [1, 2, 3, 4,5,6]
+// const arr2 = [4, 5, 6, 7]
+// let arr=[]
+// for (let i = 0; i < arr1.length; i++){
+//     arr.push(arr1[i])
+// }
+// for (let i = 0; i < arr2.length; i++){
+//     arr.push(arr2[i])
+// }
+// console.log(arr)
+
+const height = [1, 8, 6, 2, 5, 4, 8, 3, 7];
+var maxArea = function (height) {
+    height.sort((a, b) => b - a)
+    let firstheight = height[0];
+    let secondheight;
+    for (let i = 0; i < height.length; i++) {
+        if (firstheight !== height[i]) {
+            secondheight = height[i]
+            break;
+        }
+        else secondheight = height[i]
+    }
+    return (secondheight * secondheight);
 }
-for (let i = 0; i < arr2.length; i++){
-    arr.push(arr2[i])
-}
-console.log(arr)
+console.log(maxArea(height))
