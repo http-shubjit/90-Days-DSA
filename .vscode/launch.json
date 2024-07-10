@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DessertFactory$Demo",
+            "request": "launch",
+            "mainClass": "DessertFactory$Demo",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "SID",
+            "request": "launch",
+            "mainClass": "SID",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "Day75",
+            "request": "launch",
+            "mainClass": "Day75",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "Day64",
             "request": "launch",
             "mainClass": "Day64",
