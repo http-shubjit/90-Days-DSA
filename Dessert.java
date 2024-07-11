@@ -35,10 +35,15 @@ public interface Dessert {
 
     public class Demo {
         public static void main(String[] args) {
-            Dessert d1 = DessertFactory.getDessert("cake");
+           try{
+             Dessert d1 = DessertFactory.getDessert("cake");
             Dessert d2 = DessertFactory.getDessert("cookie");
             Dessert d3 = DessertFactory.getDessert("ice cream");
-            Dessert d4 = DessertFactory.getDessert("candy"); // Throws DessertNotFoundException
+            Dessert d4 = DessertFactory.getDessert("candy"); 
+           }
+           catch (Exception e) {
+        e.printStackTrace();
+           }
         }
     }
 }

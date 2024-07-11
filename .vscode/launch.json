@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Sort",
+            "request": "launch",
+            "mainClass": "Sort",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "DessertFactory$Demo",
             "request": "launch",
             "mainClass": "DessertFactory$Demo",
