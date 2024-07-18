@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Counter",
+            "request": "launch",
+            "mainClass": "Counter",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "Day79",
+            "request": "launch",
+            "mainClass": "Day79",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "Day78",
             "request": "launch",
             "mainClass": "Day78",
