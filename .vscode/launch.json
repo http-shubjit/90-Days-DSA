@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ArrayListCreation",
+            "request": "launch",
+            "mainClass": "ArrayListCreation",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
+            "name": "HashmapCreation",
+            "request": "launch",
+            "mainClass": "HashmapCreation",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "Counter",
             "request": "launch",
             "mainClass": "Counter",
