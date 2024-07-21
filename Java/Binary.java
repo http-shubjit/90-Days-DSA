@@ -1,4 +1,6 @@
-public class Binary {
+package Java;
+
+class Binary {
     public static void binarySearch(int arr[], int target) {
         int left = 0;
         int right = arr.length - 1;

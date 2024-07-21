@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Java.Collection.Main",
+            "projectName": "DSA_55cb9d6"
+        },
+        {
+            "type": "java",
             "name": "ArrayListCreation",
             "request": "launch",
             "mainClass": "ArrayListCreation",
