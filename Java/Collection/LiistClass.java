@@ -17,8 +17,6 @@ abstract class LiistClass {
 }
 
 
-
-
 class ArrayListCreation extends LiistClass {
 
     @Override
@@ -100,6 +98,31 @@ class VectorCreation extends LiistClass {
     
 }
 
+class StackCreation extends LiistClass {
+
+    @Override
+    public void addElement(List<Integer> aList) {
+        for (int i = 0; i < 10; i++) {
+
+            aList.add(i);
+        }        
+      
+    }
+
+    @Override
+    public void print(List<Integer> aList, String string) {
+        System.out.println("This is a " + string);
+        System.out.print(aList + "\n");
+
+    }
+
+    @Override
+    public void removeElement(List<Integer> aList) {
+        aList.remove(0);
+        aList.remove(1);    }
+    
+} 
+
 class Main  {
 
     
@@ -107,6 +130,9 @@ class Main  {
         ArrayListCreation arrayListCreation = new ArrayListCreation();
         LinkedListCreation linkedListCreation = new LinkedListCreation();
         VectorCreation vectorCreation = new VectorCreation();
+        StackCreation stackCreation = new StackCreation();
+
+
 
         List<Integer> list = new ArrayList<>();
         List<Integer> linkList = new LinkedList<>();
@@ -127,11 +153,16 @@ class Main  {
         // linkedListCreation.print(linkList, "LinkList after remove element");
 
         //Vector
-
         // vectorCreation.addElement(vector);
         // vectorCreation.print(vector, "Vector and Their Element are :");
         // vectorCreation.removeElement(vector);
         // vectorCreation.print(vector, "Vector after remove element");
+
+        //Stack
+        // stackCreation.addElement(stackVector);
+        // stackCreation.print(stackVector, "Stack and and Their Element are ");
+        // stackCreation.removeElement(stackVector);
+        // stackCreation.print(stackVector, "Stack after remove element");
 
         
 
