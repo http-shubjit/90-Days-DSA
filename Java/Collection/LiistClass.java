@@ -119,7 +119,10 @@ class StackCreation extends LiistClass {
     @Override
     public void removeElement(List<Integer> aList) {
         aList.remove(0);
-        aList.remove(1);    }
+        aList.remove(1);
+    
+    
+    }
     
 } 
 
@@ -134,10 +137,10 @@ class Main  {
 
 
 
-        List<Integer> list = new ArrayList<>();
-        List<Integer> linkList = new LinkedList<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        LinkedList<Integer> linkList = new LinkedList<>();
         Vector<Integer> vector = new Vector<>();
-        Vector<Integer> stackVector = new Stack<>();
+        Stack<Integer> stack = new Stack<>();
         
 
         // //Arraylist
@@ -159,10 +162,10 @@ class Main  {
         // vectorCreation.print(vector, "Vector after remove element");
 
         //Stack
-        // stackCreation.addElement(stackVector);
-        // stackCreation.print(stackVector, "Stack and and Their Element are ");
-        // stackCreation.removeElement(stackVector);
-        // stackCreation.print(stackVector, "Stack after remove element");
+        // stackCreation.addElement(stack);
+        // stackCreation.print(stack, "Stack and and Their Element are ");
+        // stackCreation.removeElement(stack);
+        // stackCreation.print(stack, "Stack after remove element");
 
         
 
