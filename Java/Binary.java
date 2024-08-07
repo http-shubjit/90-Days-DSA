@@ -1,4 +1,3 @@
-package Java;
 
 class Binary {
     public static void binarySearch(int arr[], int target) {

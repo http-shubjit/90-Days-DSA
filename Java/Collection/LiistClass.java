@@ -1,4 +1,3 @@
-package Java.Collection;
 import java.lang.annotation.Documented;
 import java.util.ArrayList;
 import java.util.LinkedList;

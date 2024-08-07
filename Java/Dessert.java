@@ -1,4 +1,3 @@
-package Java;
 public interface Dessert {
 }
 

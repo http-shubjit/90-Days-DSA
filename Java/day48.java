@@ -1,4 +1,3 @@
-package Java;
 class EquilibriumIndex {
     int equilibirium(int arr[], int n) {
         int i, j;

@@ -1,4 +1,3 @@
-package Java;
 public class Sort {
 
     public static void BubbleSort(int arr[]) {
